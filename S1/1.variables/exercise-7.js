@@ -6,6 +6,9 @@ const car2 = {name: 'Chevrolet Corbina', basePrice:
 
 globalBasePrice = 25000;
 
+car1.finalPrice = car1.basePrice + globalBasePrice;
+car1.finalPrice = car1.basePrice + globalBasePrice;
+
 console.log(car1);
 console.log(car2);
 
