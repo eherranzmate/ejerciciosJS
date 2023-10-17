@@ -1,2 +1,2 @@
 const cars = ["Saab", "Volvo", "BMW"]
-console.log(cars.length);
+alert(cars.length);

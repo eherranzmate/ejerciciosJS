@@ -1,2 +1,4 @@
 const cars = ["Saab", "Volvo", "BMW"];
-console.log(cars[1]);
+
+let index = cars.indexOf ('Volvo');
+console.log(cars[index]);

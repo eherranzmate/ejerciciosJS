@@ -6,8 +6,13 @@ const foodSchedule = [{name: "Salad", isVegan: true},
 {name: "Rice", isVegan: true}, 
 {name: "Pasta", isVegan: true}];
 
+fruitsIndex = 0;
 for(i = 0; i < foodSchedule.length; i++) {
-    if(foodSchedule[i].isVegan === false) {
-    
+    if(!foodSchedule[i].isVegan) {
+        foodSchedule[i].name = fruits[fruitsIndex];
+        foodSchedule[i].isVegan = true;
+        fruitsIndex++;
+
     }
 }
+console.log(foodSchedule)
