@@ -29,19 +29,20 @@ const users = [
     },
 ]
 
-let totalVolume;
+let totalVolume = 0;
+let count = 0;
 
 for(let user of users){
-    for(key in user.favoritesSounds){
-       totalVolume = user.favoritesSounds[key].volume;
-    }
-}   
-        
-let sumVolume = 0;
-
-    for(let i = 0; i < totalVolume.length; i++) {
-        sumVolume += totalVolume[i] / totalVolume.length;
+    for(property in user.favoritesSounds) {
+        let favoritesSound = user.favoritesSounds[property];
+        totalVolume += favoritesSound.volume;
+        count++;
+    }   
 }
-
-
-console.log(totalVolume) 
+        
+console.log(totalVolume / count)
+    
+    
+    
+    
+  

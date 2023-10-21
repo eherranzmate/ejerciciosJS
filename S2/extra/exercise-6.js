@@ -1,12 +1,12 @@
-function swap(array, index, secondIndex){
-    let param = array[index];
-    array[index] = array[secondIndex];
-    array[secondIndex] = param;
+function swap(wordList, index, secondIndex){
+    let exchange = wordList[index];
+    wordList[index] = wordList[secondIndex];
+    wordList[secondIndex] = exchange;
     
-return array;
+return wordList;
 }
 
-array =['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño'];
+let players =['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño'];
 
-swap(array, 0,3);
-console.log(array)
+;
+console.log(swap(players, 1,3))

@@ -1,13 +1,13 @@
-function findArrayIndex(array, text) {
-    for(i= 0; i < array.length; i++) {
-        if (array[i] === text){
+function findArrayIndex(wordList, text) {
+    for(i= 0; i < wordList.length; i++) {
+        if (wordList[i] === text){
             return i;
         }
     } 
 }
 
 
+
 let bugs =['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'];
 
-bugs = findArrayIndex(['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'], 'Salamandra' )
-console.log (bugs)
+console.log(findArrayIndex(bugs, 'Mosquito'));

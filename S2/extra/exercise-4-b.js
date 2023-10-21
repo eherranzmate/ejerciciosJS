@@ -1,11 +1,18 @@
-function findArrayIndex(array, text) {
-    for(i= 0; i < array.length; i++) {
-        if (array[i] === text){
+function findArrayIndex(wordList, text) {
+    for(i= 0; i < wordList.length; i++) {
+        if (wordList[i] === text){
             return i;
         }
     } 
 }
 
-function removeItem(array, text) {
-    return (findArrayIndex)
+
+function removeItem(wordList, text) {
+      findArrayIndex(wordList, text);
+         wordList.splice(i,1);
+            return wordList;
 }
+
+let bugs =['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'];
+
+console.log(removeItem(bugs, 'Salamandra'));

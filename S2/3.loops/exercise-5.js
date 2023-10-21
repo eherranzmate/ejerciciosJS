@@ -11,4 +11,4 @@ for (let toy of toys) {
     }
 }
 
-console.log(popularToys)
+console.log(popularToys);

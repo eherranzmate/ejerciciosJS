@@ -8,6 +8,7 @@ const movies = [
 let newCategories = [];
 
 for(let movie of movies) { 
+    console.log(movie)
     for(let category of movie.categories) {
         if (!newCategories.includes(category)) {
             newCategories.push(category);
