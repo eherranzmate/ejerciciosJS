@@ -1,6 +1,6 @@
 let handleFocus = function(focus) {
-    console.log(focus) 
+    console.log(this.value) 
 }
 
-let focusInput = document.querySelector('input');
-focusInput.addEventListener('focus', handleFocus)
+let focusInput$$ = document.querySelector('input');
+focusInput$$.addEventListener('focus', handleFocus)

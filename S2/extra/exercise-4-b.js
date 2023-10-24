@@ -9,10 +9,13 @@ function findArrayIndex(wordList, text) {
 
 function removeItem(wordList, text) {
       findArrayIndex(wordList, text);
+      if (i > -1){
          wordList.splice(i,1);
-            return wordList;
+        }
+
+      return wordList;
 }
 
 let bugs =['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'];
 
-console.log(removeItem(bugs, 'Salamandra'));
+console.log(removeItem(bugs, 'Salamandras'));

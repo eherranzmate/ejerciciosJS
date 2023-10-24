@@ -3,7 +3,7 @@ function swap(wordList, index, secondIndex){
     wordList[index] = wordList[secondIndex];
     wordList[secondIndex] = exchange;
     
-return wordList;
+    return wordList;
 }
 
 let players =['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño'];

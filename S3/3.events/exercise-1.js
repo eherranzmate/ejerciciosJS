@@ -1,7 +1,7 @@
-let handleClick = function(click) {
+function evento(click) {
     console.log(click);
 }
 
 
 let btnClick = document.querySelector('#btnToClick');
-btnClick.addEventListener('click', handleClick)
+btnClick.addEventListener('click', evento)

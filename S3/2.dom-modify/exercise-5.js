@@ -1,2 +1,2 @@
-let insert$$ = document.querySelector('.fn-insert-here');
-insert$$.innerText = 'Wubba Lubba dub dub';
+let insert$$ = document.querySelector('h2.fn-insert-here');
+insert$$.textContent = 'Wubba Lubba dub dub';

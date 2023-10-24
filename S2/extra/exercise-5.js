@@ -1,5 +1,5 @@
-function rollDice(max){
-    return Math.floor( Math.random() * (max - 1)) + 1;
+function rollDice(sides){
+    return Math.floor( Math.random() * (sides)) + 1;
 }
 
 console.log (rollDice(6));

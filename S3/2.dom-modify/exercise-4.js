@@ -1,5 +1,4 @@
-const p$$ = document.createElement("p")
-document.body.appendChild(p$$)
-p$$.innerText = "Soy dinámico!";
-
+const p$$ = document.createElement('p');
+p$$.innerText = 'Soy dinámico!';
+document.body.appendChild(p$$);
 

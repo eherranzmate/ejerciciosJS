@@ -1,2 +1,2 @@
-let newDiv = document.createElement('div');
-document.body.appendChild(newDiv);
+let newDiv$$ = document.createElement('div');
+document.body.appendChild(newDiv$$);

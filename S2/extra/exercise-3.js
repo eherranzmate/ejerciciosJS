@@ -29,12 +29,18 @@ const users = [
     },
 ]
 
+let soundCounter = {};
+
 for(let user of users) {
-    for( let properties in user.favoritesSounds) {
-        for(i = 0; properties.length; i++) {
-            
+    for(let properties in user.favoritesSounds) {
+        if(!soundCounter.hasOwnProperty(properties)){
+            soundCounter[properties] = 0;
         }
-    }
+        
+            soundCounter[properties] += 1;
+                    
+        }
 }
 
-console.log(sound);
+
+console.log(soundCounter);
