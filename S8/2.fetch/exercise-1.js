@@ -7,6 +7,3 @@ fetch('https://api.agify.io?name=michael')
     })
 
 
-// fetch().then(res => res.json()).then(resDasta => {
-// console.log(resData);
-// });

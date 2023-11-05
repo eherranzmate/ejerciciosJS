@@ -1,16 +1,20 @@
 const userAnwsers = [];
 
-function confirmExample(){
-    confirm()
+function confirmExample(description){
+    
+     return confirm(description)
 }
 
-function promptExample(){
-    propmt()
+function promptExample(description){
+    
+    return prompt(description);
 }
 
-function father(){
+function father(description, callback){
+    userAnwsers.push(callback(description));
 
 }
 
 
-
+father('confirma', confirmExample);
+father('Promptea', promptExample)
